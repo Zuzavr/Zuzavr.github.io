@@ -1,0 +1,345 @@
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../font/fonts/OpenSansRegular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Lobster";
+    src: url("../font/fonts/Lobster_1_4.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	font-family: "OpenSansRegular", "Helvetica Neue", Ariel, sans-serif;
+	color: #333;
+	margin: 0;
+}
+h1 {
+	font-size:  2.5em;
+	margin: 0;
+}
+h2,h3,h4,h5,h6,p {
+	font-weight: normal;
+	margin: 0;
+}
+.top-bar.fix {
+	position: fixed;
+	background-color: white;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	z-index: 100;
+}
+.top-bar.fix nav {
+	margin: auto;
+	width: 90%;
+}
+#lable {
+	float: left;
+	margin: auto;
+	padding-top: 10px;
+	color: #44C0C2;
+	font-family: "Lobster", "Helvetica Neue", Ariel, sans-serif;
+	font-size: 2em;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	color: #49CBCD;
+}
+nav ul {
+	float: right;
+	list-style-type: none;
+	margin: 0px;
+	width: 50%;
+}
+nav ul li {
+	float: left;
+	padding: 0px 0px;
+	width: 16.5%;
+}
+nav ul li div {
+	padding-top: 20px;
+	height: 37px;
+	text-align:  center;
+	color: #3EC2F3;
+}
+nav ul li div:hover {
+	border-bottom: 3px solid #49CBCD;
+	background-color: #F8F9FB;
+}
+.container {
+	margin-top: 60px;		
+}
+.contents_wrap {
+    text-align: center;
+}
+header {
+	padding-top: 60px;
+}
+.team {
+	background-color: white;
+	height: 550px;
+}
+.plans {
+	background-color: #F1F1F0;
+	height: 550px;
+}
+.contact {
+	background: url(../img/contact.png) no-repeat center center;
+	background-size: cover;
+	height: 550px;
+	color: white;
+}
+.team a:hover {
+	color: black;
+}
+.team a:hover .foto p {
+	display: block;
+}
+.member {
+	float: left;
+	width: 21%;
+	padding: 2%;
+}
+.member h4 {
+	padding: 3%;
+}
+.foto {
+	background-color: #EEEEF0;
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	margin-bottom: 40px;
+	border-radius: 75px;
+}
+.foto p {
+	display: none;
+	color: #F46D6D;
+	padding-top: 35px;
+	font-size: 60px;
+	font-weight: bold;
+}
+.plan{
+	float: left;
+	margin: 70px 1% 50px 1%;
+	width: 31%;
+	height: 80%;
+}
+.plan p{
+	color: #8C9299; 
+}
+.plan > div {
+	padding: 7px;
+	background-color: white;
+	border: 0.5px solid #ECF8F1;
+}
+.plan > div:last-child, .plan > div:nth-child(2) {
+	background-color: #F8F9FB;
+}
+.plan > div:first-child {
+	background-color: #485460;
+	color: white;
+}
+.plan a {
+	display: block;
+	width: 50%;
+	margin: auto;
+}
+.plan a div {
+	width: 100%;
+	margin: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 3px 0 3px 0;
+	border-radius: 3px;
+	background-color: #788492;
+    color: white;
+}
+.plan a div:hover {
+	background-color: #49CBCD;
+}
+.contact .contents > div {
+	margin: 5%;
+	width: 40%;
+	float: right;
+}
+.contact .contents div:last-child {
+	text-align: left;
+}
+.contact h2 + p {
+	color: #A1A1A1;
+}
+#face, #twit, #g {
+ 	margin: 5px;
+	float: left;
+ 	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+ 	text-align: center;
+ 	color: white;
+}
+#face {
+	background-color: #3B5997;
+	padding-top: 6px;
+	height: 44px;
+	font-weight: bold;
+}
+#face:hover {
+	border: 2px solid white;
+	padding-top: 4px;
+	width: 46px;
+	height: 40px;
+}
+#face h2 {
+	font-weight: bold;
+}
+#twit {
+	background: url(../img/twitter.png) no-repeat center center;
+	background-size: cover;
+	background-color: #3EC2F3; 
+}
+#twit:hover {
+	border: 2px solid white;
+	width: 46px;
+	height: 46px;
+}
+#g {
+	background-color: #E44C41;
+	padding-top: 4px;
+	height: 46px;
+}
+#g:hover {
+	border: 2px solid white;
+	padding-top: 2px;
+	width: 46px;
+	height: 42px;
+}
+.contact form {
+	width: 100%;
+}
+.contact input {
+	margin: 2% 0 2% 0;
+	width: 41%;
+	float: left;
+	border-radius: 3px;
+	border: none;
+	padding:7px;
+	
+}
+.contact input:nth-child(2) {
+	float: right;
+	margin-right: 4%;
+}
+.contact input::placeholder, .contact textarea::placeholder {
+	color: #C5C5C5; 
+}
+.contact textarea {
+	margin: 2% 0 2% 0;
+	width: calc(96% - 16px);
+	float: left;
+	height: 50%;
+	border-radius: 3px;
+	border: none;
+	padding:8px;
+}
+input[type="submit"] {
+	margin-right: 4%; 
+	float: right;
+	background-color: #49CBCD;
+	color: white;
+	padding: 8px;
+	width: 25%;
+	font-size: 20px;
+}
+input[type="submit"]:hover {
+	border: 2px solid white;
+	padding: 6px;
+}
+.wrap {
+	width: 90%;
+	margin: auto;
+}
+.posted {
+	color: #BFACE2;	
+}
+@media (max-width: 768px) {
+	#menu {
+		margin: 20px 25px;
+		float: right;
+		color: #3EC2F3;
+		cursor: pointer;
+	}
+	#nav {
+		width: 100%;
+		margin: 0;
+		padding: 0 0 10px 0;
+		background: #EBF2F2;
+	}
+	#nav li {
+		width: 100%;
+		float: none;
+		text-align: center;
+		padding: 5px 0;
+	}
+	#nav div {
+		padding-top: 5px;
+		padding-bottom: 2px;
+		height: 20px;
+		text-align:  center;
+	}
+	#nav div:hover {
+		height: 17px;
+	}
+	.team {
+		height: 920px;
+	}
+	.member {
+		width: 46%;
+		padding: 2%;
+	}
+	.plans {
+	padding: 20px 0 20px 0;
+	height: 1200px;
+	}
+	.plan{
+		float: none;
+		margin: auto;
+		margin-top: 20px;
+		width: 70%;
+		height: 80%;
+	}
+	.contact {
+		height: 750px;
+	}
+	.contact .contents > div {
+		margin: 5%;
+		width: 90%;
+		float: none;
+	}
+	.contact .contents > div:last-child {
+		padding-top: 300px;
+	}
+}
+@media (max-width: 480px) {
+	.member {
+		float: none;
+		margin: auto;
+		margin-top: 20px;
+		width: 70%;
+		height: 80%;
+	}
+	.contact {
+		height: 900px;
+	}
+		.plans {
+	padding: 20px 0 20px 0;
+	height: 1350px;
+	}
+	.team {
+		height: 1700px;
+	}
+}
