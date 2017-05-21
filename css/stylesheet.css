@@ -264,7 +264,8 @@ input[type="submit"]:hover {
 	margin: auto;
 }
 .posted {
-	color: #BFACE2;	
+	color: #BFACE2;
+	padding-bottom: 8px;
 }
 @media (max-width: 768px) {
 	#menu {
